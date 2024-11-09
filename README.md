@@ -35,6 +35,8 @@ cd circuits/
 circom multiplier2.circom --r1cs --wasm --sym --c
 ```
 
+* To use from the front end, copy `multiplier2.wasm` to `src/public` dir as well as `multiplier2_0001.zkey` and `verification_key.json` (last two, might be generated later on in the instructions).
+
 ### Witness
 To generate a witness for a proof, run:
 
@@ -113,58 +115,47 @@ https://book.getfoundry.sh/
 ## Usage
 
 ### Build
-
 ```shell
 $ forge build
 ```
 
 ### Test
-
 ```shell
 $ forge test
 ```
 
 ### Format
-
 ```shell
 $ forge fmt
 ```
 
 ### Gas Snapshots
-
 ```shell
 $ forge snapshot
 ```
 
 ### Anvil
-
 ```shell
 $ anvil
 ```
 
 ### Deploy
-
 ```shell
 cd contracts/
 $ forge script script/verifier.s.sol:VerifierScript --rpc-url <your_rpc_url> --private-key <your_private_key>
 ```
 
 ### Cast
-
 ```shell
 $ cast <subcommand>
 ```
 
 ### Help
-
 ```shell
 $ forge --help
 $ anvil --help
 $ cast --help
 ```
-
-
-
 
 ## References
  * [Tutorial](https://www.youtube.com/watch?app=desktop&v=2BHdTjpYmFg&ab_channel=ChristianLacdael)
